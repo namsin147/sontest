@@ -42,10 +42,11 @@ body{
   background: #fff;
 }
 
-.control ul li{
+.control .list li{
   display:inline-block;
   color:#c9196c;
-  
+  font-weight:bold;
+  margin-left:10px;
 }
 	
 
