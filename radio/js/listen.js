@@ -59,7 +59,7 @@ $(document).ready(function(){
   })
   
   $('.btn-repeat').click(function(){
-    
+    $('').css()
   })
   
 })
