@@ -42,6 +42,12 @@ body{
   background: #fff;
 }
 
+.control ul li{
+  display:inline-block;
+  color:#c9196c;
+  
+}
+	
 
 /* section */
 section .main-title h1{ border:1px solid white; position:relative; top: 150px;font-size:150px; text-align: center; font-family: 'Fredoka One', cursive; color:#75bcfa; text-shadow: 0 0 4px white;}
