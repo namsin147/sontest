@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* common, reset */
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+img{max-width: 100%;}
+button{background: none; border:0; cursor: pointer;}
+html, body{height: 100%; background-color:#ffd4f2;}
+body{
+  font-family: sans-serif;
+}
+.skip{font-size: 0;text-indent: -99999px;position: absolute;left: -99999px;}
+
+/* header */
+.control .menu-bar {position:relative; top:60px;text-align: center;}
+.control .menu-bar button{}
+.control .menu-bar button i{color:#c9196c;}
+.control .btn-area{position: relative; top: 100px; text-align: center; font-size:100px; box-sizing:border-box;}
+.control .btn-area button{}
+.control .btn-area button i{color:#c9196c;}
+.control b{position:absolute; top:20%; left:50%;transform:translateX(-50%); color:#c9196c; }
+
+.control{
+  margin: 20px 0;
+  padding: 0 30px;
+}
+.control .progressbar{
+  position: relative;
+  top:170px;
+}
+.control .progressbar .bar-bg{
+  position: relative;
+  background: #c9196c;
+  height: 6px; width: 260px;
+  margin:auto;
+  border-radius: 3px;
+}
+.control .progressbar .bar-bg .bar{
+  position: absolute;
+  left:-1px;
+  width:0%; height: 6px;
+  border-radius: 3px;
+  background: #fff;
+}
+
+
+/* section */
+section .main-title h1{ border:1px solid white; position:relative; top: 150px;font-size:150px; text-align: center; font-family: 'Fredoka One', cursive; color:#75bcfa; text-shadow: 0 0 4px white;}
+section .music { width:1350px; margin: 200px auto;}
+section .music .music-box img{width:250px; height:250px; float:left; margin: 10px 10px; transition: all 1s;border-radius: 50%;}
+section .music .music-box img:hover,section .music .music-box img.active{transform:scale(1.2); }
+{}
+
+
+/* footer */
+footer{
+  clear:both;
+	background: #3b3b3b;
+	padding: 100px 0;
+	overflow: hidden;
+  text-align: center;
+  color:#fff;
+  font-size: 14px;
+  line-height: 20px;
+}
