@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+	</head>
+  <script type="text/javascript">
+      function code(){
+        // 6개의 코드를 저장할 배열
+          var code = new Array(6);
+         // 추첨된 코드번호의 갯수
+          var count = 0;
+        // 번호중복 방지용 변수
+          var mFlag = true;
+          // 6개의 코드번호를 얻을때까지 반복
+          while(count < 6)
+          {
+             var number;
+             // 랜덤번호 추출
+             number = parseInt(Math.random()*9)+1
+             // 중복확인
+             for(var i=0; i<count; i++)
+                if(code[i] == number) mFlag = false;
+             // 중복된 번호가 아니면 코드 번호배열에 추가
+             if(mFlag)
+             {
+                  code[count] = number;
+                  count++;
+             }
+             mFlag = true;
+         }
+
+      // 추첨된 코드번호 출력
+      alert(code[0]+''+code[1]+''+code[2]+''+code[3]+''+code[4]+''+code[5]);
+    }
+      // 자식창에서 부모창으로 보내기
+
+ </script>
+	<body>
+		<input type="button" onclick="code();" value="code" />
+		뉴클리어 코드값 :
+		<input type="text" id="pInput">
+		<input type="button" value="전달">
+	</body>
+</html>
