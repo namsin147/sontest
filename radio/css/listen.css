@@ -41,6 +41,10 @@ body{
   border-radius: 3px;
   background: #fff;
 }
+.control .list{
+  position:absolute;
+  top:80px;
+}
 
 .control .list li{
   display:inline-block;
