@@ -57,4 +57,9 @@ $(document).ready(function(){
     player.play();
     $('#btn-play-pause i').text('pause');
   })
+  
+  $('.btn-repeat').click(function(){
+    
+  })
+  
 })
